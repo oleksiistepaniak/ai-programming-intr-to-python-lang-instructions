@@ -1,14 +1,9 @@
+from helper import is_number
+
 print("Hello. Please, enter specific coordinates to determine whether they belong to the shaded area")
 
 valid_x_coords = [-1, -2, 1, 2]
 valid_y_coords = [-1, -2]
-
-def is_number(value):
-    try:
-        float(value)
-        return True
-    except ValueError:
-        return False
 
 firstCoordinate = input("Enter x coordinate: ")
 secondCoordinate = input("Enter y coordinate: ")
